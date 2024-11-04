@@ -326,54 +326,6 @@ epochs_per_lr = 50    # Number of epochs per learning rate
 
 # 23. Define loss function
 criterion = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_token_id)
-    
-(CS5446) e1329469@xlogin1:~/NLP/grammar_correction$ ls
-CS5446	     grammar_correction_model_lr_0.000959.pth  model.py      output_410945.out	train.py
-__pycache__  grammar_correction_model_lr_0.001000.pth  old_models    run_training.sh
-data	     infer.py				       old_train.py  test_model.py
-(CS5446) e1329469@xlogin1:~/NLP/grammar_correction$ vi train.py
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 epochs_per_lr = 50 # 50    # Number of epochs per learning rate
 
@@ -536,5 +488,3 @@ for lr_idx, lr in enumerate(np.linspace(start_lr, end_lr, num_lrs), 1):
     print(f"Corrected: {corrected_sentence}")
 
 print("\nTraining completed.")
-
-    
