@@ -52,7 +52,7 @@ def train_model(happy_tt, csv_path, index=0):
     Train model on given csv files
     """
     args = TTTrainArgs(
-        batch_size=8,
+        batch_size=16,
         max_input_length=MAX_INPUT_LENGTH,
         max_output_length=MAX_OUTPUT_LENGTH,
         num_train_epochs=1,
